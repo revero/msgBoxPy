@@ -7,7 +7,7 @@
 
 # msgBoxPy - Quick import or reference for making simple GUI message boxes.
 # USAGE: "import msgBoxPy" or copy the examples below. Two variables, "title"
-#   and "message" must be submitted to the funtion or replaced if the example
+#   and "message" must be submitted to the function or replaced if the example
 #   is copied directly into a script.
 
 from tkinter import *
