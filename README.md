@@ -26,8 +26,8 @@ Copy msgBoxPy.py into the same directory as your Python script and import it int
 import msgBoxPy
 
 msgBoxPy.infobox('Title', 'Here is my info message.') # Displays an information box with OK button
-msgBoxPy.warningbox('Title, 'Here is my warning message!') # Displays a warning box with OK button
-msgBoxPy.errorbox('Title, 'Here is my error message!') # Displays an error box with OK button
+msgBoxPy.warningbox('Title', 'Here is my warning message!') # Displays a warning box with OK button
+msgBoxPy.errorbox('Title', 'Here is my error message!') # Displays an error box with OK button
 ```
 
 Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required title and message fields:
