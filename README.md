@@ -2,12 +2,18 @@
 Simple Cross-platform Python Message Boxes Using the Tkinter Standard Library
 
 ## Purpose and Background
+I just needed a simple, small, and quick way to display information, warnings, or ask a simple yes or no question in a GUI format for my Python scripts. Sure there are many great third party modules I could use (e.g. [pyautogui](https://github.com/asweigart/pyautogui)), but I prefer to stay as close to the standard Python library as possible for my scripts. That's why msgBoxPy uses the [Tkinter](https://wiki.python.org/moin/TkInter) standard library to show cross-platform message boxes.
 
+The message boxes available are:
+* Information
+* Warning
+* Error
+* Yes/No (which returns an answer of 'yes' or 'no')
 
 ## Requirements
 * [ ] Python 3.4 or higher (*with Standard Library*)
 
-Tested with Windows 7 SP1 x64 and Ubuntu 16.04 x64, but it should work on other operating systems that support Python 3.4 or higher.
+Tested with Windows 7 SP1 x64 and Ubuntu 16.04 x64
 
 ## Installation
 No install required. Just copy the msgBoxPy.py file to the same directory as your Python script and import it, or copy and paste the examples from within the msgBoxPy.py file directly into your own script.
