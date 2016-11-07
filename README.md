@@ -32,6 +32,9 @@ msgBoxPy.errorbox('Title', 'Here is my error message!') # Displays an error box 
 
 Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required title and message fields:
 ```python
+from tkinter import *
+import tkinter.messagebox as box
+
 def yesnobox(title='Title', message='Empty'):
     Tk().withdraw()
     answer = box.askquestion(title, message)
