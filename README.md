@@ -10,6 +10,8 @@ The message boxes available are:
 * Error
 * Yes/No (which returns an answer of 'yes' or 'no')
 
+![alt text](https://github.com/lotspaih/msgBoxPy/blob/master/ex_msgBoxPy.png "Example Image")
+
 ## Requirements
 * [ ] Python 3.4 or higher (*with Standard Library*)
 
