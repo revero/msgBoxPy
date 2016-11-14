@@ -36,6 +36,7 @@ from tkinter import *
 import tkinter.messagebox as box
 
 def yesnobox(title='Title', message='Empty'):
+    '''Show Yes/No messagebox GUI and return answer'''
     Tk().withdraw()
     answer = box.askquestion(title, message)
     return answer  # Returns 'yes' or 'no'
