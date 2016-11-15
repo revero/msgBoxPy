@@ -10,7 +10,7 @@
 #   and "message" must be submitted to the function or replaced if the example
 #   is copied directly into a script.
 
-from tkinter import *
+from tkinter import Tk
 import tkinter.messagebox as box
 
 
