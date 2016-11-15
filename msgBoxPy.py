@@ -18,18 +18,21 @@ def infobox(title='Title', message='Empty'):
     '''Show information messagebox GUI'''
     Tk().withdraw()
     box.showinfo(title, message)
+    return None
 
 
 def warningbox(title='Title', message='Empty'):
     '''Show warning messagebox GUI'''
     Tk().withdraw()
     box.showwarning(title, message)
+    return None
 
 
 def errorbox(title='Title', message='Empty'):
     '''Show error messagebox GUI'''
     Tk().withdraw()
     box.showerror(title, message)
+    return None
 
 
 def yesnobox(title='Title', message='Empty'):
