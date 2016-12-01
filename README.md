@@ -46,6 +46,8 @@ print(response) # Shows a 'yes' or 'no' response
 ```
 
 ## TODO
+* Add Ok/Cancel and Retry/CANCEL options
+* Clean up script (*make it more "[Pythonic](http://docs.python-guide.org/en/latest/writing/style/)"*)
 
 ## License
 MIT License for msgBoxPy
