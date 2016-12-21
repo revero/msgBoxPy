@@ -47,6 +47,8 @@ print(response) # Shows a 'yes' or 'no' response
 
 ## TODO
 * Add Ok/Cancel and Retry/CANCEL options
+* Add simple string and integer input options
+* Add file select and file save dialog options
 * Clean up script (*make it more "[Pythonic](http://docs.python-guide.org/en/latest/writing/style/)"*)
 
 ## License
