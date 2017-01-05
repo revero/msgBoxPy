@@ -44,10 +44,20 @@ def yesnobox(title='Title', message='Empty'):
     return answer
 
 
-# TODO: OK/Cancel box
+def okcancelbox(title='Title', message='Empty'):
+    '''Show Ok/Cancel messagebox GUI and returns True for Ok and False for
+    Cancel'''
+    Tk().withdraw()
+    answer = box.askokcancel(title, message)
+    return answer
 
 
-# TODO: Retry/Cancel box
+def retrycancelbox(title='Title', message='Empty'):
+    '''Show Retry/Cancel messagebox GUI and returns True for Retry and False
+    for Cancel'''
+    Tk().withdraw()
+    answer = box.askretrycancel(title, message)
+    return answer
 
 
 def inputbox(title='Title', prompt='Prompt text:'):
