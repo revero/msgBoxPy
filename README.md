@@ -9,11 +9,22 @@ The message boxes available are:
 * Warning
 * Error
 * Yes/No (which returns an answer of 'yes' or 'no')
+* Ok/Cancel (which returns True or False)
+* Retry/Cancel (which returns True or False)
+
+The input boxes available are:
+* String Input Box (returns the string)
+* Integer Input Box (returns an integer)
+
+The dialog boxes available are:
+* Select Filename (returns full path to file selected)
+* Save As Filename (returns full path to file for saving)
+* Select Directory (returns full path to directory selected)
 
 ![alt text](https://github.com/lotspaih/msgBoxPy/blob/master/ex_msgBoxPyU.png "Example Image")
 
 ## Requirements
-* [ ] Python 3.4 or higher (*with Standard Library*)
+* [ ] Python 3.4 or higher (*with Tkinter in Standard Library*)
 
 Tested with Windows 7 SP1 x64, Ubuntu 16.04 x64, and OSX 10.11.6
 
@@ -28,6 +39,12 @@ import msgBoxPy
 msgBoxPy.infobox('Title', 'Here is my info message.') # Displays an information box with OK button
 msgBoxPy.warningbox('Title', 'Here is my warning message!') # Displays a warning box with OK button
 msgBoxPy.errorbox('Title', 'Here is my error message!') # Displays an error box with OK button
+
+answer = msgBoxPy.retrycancelbox(title='Title', message='Empty')
+if not answer:
+    msgBoxPy.warningbox('Retry?', 'You have cancelled the retry!')
+else:
+    retryAgain()
 ```
 
 Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required title and message fields:
@@ -46,7 +63,6 @@ print(response) # Shows a 'yes' or 'no' response
 ```
 
 ## TODO
-* Add Ok/Cancel and Retry/CANCEL options
 * Add simple string and integer input options
 * Add file select and file save dialog options
 * Clean up script (*make it more "[Pythonic](http://docs.python-guide.org/en/latest/writing/style/)"*)
