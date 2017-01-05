@@ -47,7 +47,7 @@ else:
     retryAgain()
 ```
 
-Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required title and message fields:
+Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required or optional parameters:
 ```python
 from tkinter import Tk
 import tkinter.messagebox as box
