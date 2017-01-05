@@ -18,7 +18,7 @@ The input boxes available are:
 
 The dialog boxes available are:
 * Select Filename (returns full path to file selected)
-* Save As Filename (returns full path to file for saving)
+* Save As Filename (returns full path to file and name for saving)
 * Select Directory (returns full path to directory selected)
 
 ![alt text](https://github.com/lotspaih/msgBoxPy/blob/master/ex_msgBoxPyU.png "Example Image")
