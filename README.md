@@ -1,8 +1,8 @@
 # msgBoxPy
-Simple Cross-platform Python Message Boxes Using the Tkinter Standard Library
+Simple Cross-platform Python Message and Dialog Boxes Using the Tkinter Standard Library
 
 ## Purpose and Background
-I just needed a simple, small, and quick way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Python scripts. Sure there are many great third party modules I could use (e.g. [pyautogui](https://github.com/asweigart/pyautogui)), but I prefer to stay as close to the standard Python library as possible for most of my scripts. That's why msgBoxPy uses the [Tkinter](https://wiki.python.org/moin/TkInter) standard library to show cross-platform message, input, and dialog boxes.
+I just needed a simple, small, and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Python scripts. Sure there are many great third party modules I could use (e.g. [pyautogui](https://github.com/asweigart/pyautogui)) that are much more sophisticated, but I prefer to stay as close to the standard Python library as possible and only needed some basic GUI options. That's why msgBoxPy uses [Tkinter](https://wiki.python.org/moin/TkInter), included in the standard Python library, to show cross-platform message, input, and dialog boxes.
 
 The message boxes available are:
 * Information
@@ -66,6 +66,7 @@ print(response) # Shows a 'yes' or 'no' response
 * Add simple string and integer input options
 * Add file select and file save dialog options
 * Clean up script (*make it more "[Pythonic](http://docs.python-guide.org/en/latest/writing/style/)"*)
+* Add multiple selection type boxes??? (e.g. lists, checkboxes, radio buttons)
 
 ## License
 MIT License for msgBoxPy
