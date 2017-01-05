@@ -13,7 +13,7 @@ The message boxes available are:
 * Retry/Cancel (which returns True or False)
 
 The input boxes available are:
-* String Input Box (returns the string)
+* String Input Box (returns the string if entered, otherwise returns 'empty' or 'cancel')
 * Integer Input Box (returns an integer)
 
 The dialog boxes available are:
