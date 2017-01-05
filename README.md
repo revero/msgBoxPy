@@ -29,7 +29,7 @@ The dialog boxes available are:
 Tested with Windows 7 SP1 x64, Ubuntu 16.04 x64, and OSX 10.11.6
 
 ## Installation
-No install required. Just copy the msgBoxPy.py file to the same directory as your Python script and import it, or copy and paste the examples from within the msgBoxPy.py file directly into your own script.
+No install required. Just copy the msgBoxPy.py file to the same directory as your Python script and import it, or copy and paste the examples from within the msgBoxPy.py file directly into your own script and modify as needed.
 
 ## Example Use
 Copy msgBoxPy.py into the same directory as your Python script and import it into your script:
