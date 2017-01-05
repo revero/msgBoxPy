@@ -40,10 +40,10 @@ msgBoxPy.infobox('Title', 'Here is my info message.') # Displays an information 
 msgBoxPy.warningbox('Title', 'Here is my warning message!') # Displays a warning box with OK button
 msgBoxPy.errorbox('Title', 'Here is my error message!') # Displays an error box with OK button
 
-answer = msgBoxPy.retrycancelbox(title='Title', message='Empty')
-if not answer:
+answer = msgBoxPy.retrycancelbox(title='Title', message='Empty') # Displays Retry/Cancel box
+if not answer: # Answer was False (Cancel button was selected)
     msgBoxPy.warningbox('Retry?', 'You have cancelled the retry!')
-else:
+else: # Answer was True (Retry was selected)
     retryAgain()
 ```
 
