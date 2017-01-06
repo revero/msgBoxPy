@@ -8,7 +8,7 @@
 # msgBoxPy - Quick import or reference for making simple GUI messages, input,
 #    and dialog boxes.
 # USAGE: "import msgBoxPy" or copy the examples (including imports) below.
-# VERSION: 01/04/2017
+# VERSION: 01/06/2017
 
 from tkinter import Tk
 import tkinter.messagebox as box
@@ -74,7 +74,15 @@ def inputbox(title='Title', prompt='Prompt text:'):
         return enteredString
 
 
-# TODO: Integer input box
+def integerbox(title='Title', prompt='Prompt text:'):
+    '''Creates a simple integer input box with Ok/Cancel buttons. Ok returns
+    the integer entered. Cancel returns "cancel".'''
+    Tk().withdraw()
+    enteredInteger = simpledialog.askinteger(title, prompt)
+    if enteredInteger == None:
+        return 'cancel'
+    else:
+        return enteredInteger
 
 
 def selectfilenamebox(**kwargs):
@@ -86,7 +94,19 @@ def selectfilenamebox(**kwargs):
     return filePath
 
 
-# TODO: Select file save box
+def savefilenamebox(**kwargs):
+    '''Creates a save file dialog box and returns path to the file
+    selected or name entered. Returns empty if Cancel was selected.
+    Example keyword options are "title" and "initialdir".'''
+    Tk().withdraw()
+    filePath = filedialog.asksaveasfilename(**kwargs)
+    return filePath
 
 
-# TODO: Select folder box
+def selectdirectorybox(**kwargs):
+    '''Creates a select directory dialog box and returns path to the directory
+    selected or returns empty if Cancel was selected.
+    Example keyword options are "title", "initialdir", and "mustexist".'''
+    Tk().withdraw()
+    filePath = filedialog.askdirectory(**kwargs)
+    return filePath
