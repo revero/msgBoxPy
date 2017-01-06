@@ -2,9 +2,9 @@
 Simple Cross-platform Python Message and Dialog Boxes Using the Tkinter Standard Library
 
 ## Purpose and Background
-I just needed a simple, small, and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Python scripts. Sure there are many great third party modules I could use (e.g. [pyautogui](https://github.com/asweigart/pyautogui)) that are much more sophisticated, but I prefer to stay as close to the standard Python library as possible and only needed some basic GUI options. That's why msgBoxPy uses [Tkinter](https://wiki.python.org/moin/TkInter), included in the standard Python library, to show cross-platform message, input, and dialog boxes.
+I just needed a simple, small, and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Python scripts. Sure there are many great third party modules I could use that are much more sophisticated, but I prefer to stay as close to the standard Python library as possible and only needed some basic GUI options. That's why I pieced together msgBoxPy's examples to use [Tkinter](https://wiki.python.org/moin/TkInter), included in the standard Python library, to show cross-platform message, input, and dialog boxes.
 
-The message boxes available are:
+**The message boxes available are:**
 * Information
 * Warning
 * Error
@@ -12,11 +12,11 @@ The message boxes available are:
 * Ok/Cancel (which returns True or False)
 * Retry/Cancel (which returns True or False)
 
-The input boxes available are:
+**The input boxes available are:**
 * String Input Box (returns the string if entered, otherwise returns 'empty' or 'cancel')
 * Integer Input Box (returns a validated integer, otherwise returns 'cancel')
 
-The dialog boxes available are:
+**The dialog boxes available are:**
 * Select Filename (returns full path to file selected)
 * Save As Filename (returns full path to file and name for saving)
 * Select Directory (returns full path to directory selected)
