@@ -14,7 +14,7 @@ The message boxes available are:
 
 The input boxes available are:
 * String Input Box (returns the string if entered, otherwise returns 'empty' or 'cancel')
-* Integer Input Box (returns an integer)
+* Integer Input Box (returns a validated integer, otherwise returns 'cancel')
 
 The dialog boxes available are:
 * Select Filename (returns full path to file selected)
@@ -45,6 +45,12 @@ if not answer: # Answer was False (Cancel button was selected)
     msgBoxPy.warningbox('Retry?', 'You have cancelled the retry!')
 else: # Answer was True (Retry was selected)
     retryAgain()
+    
+myDirectory = msgBoxPy.selectdirectorybox(initialdir='/etc', mustexist=True) # Displays Select Directory dialog
+if not myDirectory: # Cancel button was selected
+    msgBoxPy.errorbox(title='Error', message='Cancelled!')
+else: # Directory was selected and is returned 
+    msgBoxPy.infobox(title='Your Directory', message=myDirectory)
 ```
 
 Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required or optional parameters:
@@ -63,8 +69,6 @@ print(response) # Shows a 'yes' or 'no' response
 ```
 
 ## TODO
-* Add simple string and integer input options
-* Add file select and file save dialog options
 * Clean up script (*make it more "[Pythonic](http://docs.python-guide.org/en/latest/writing/style/)"*)
 * Add multiple selection type boxes??? (e.g. lists, checkboxes, radio buttons)
 
