@@ -40,6 +40,12 @@ msgBoxPy.infobox('Title', 'Here is my info message.') # Displays an information 
 msgBoxPy.warningbox('Title', 'Here is my warning message!') # Displays a warning box with OK button
 msgBoxPy.errorbox('Title', 'Here is my error message!') # Displays an error box with OK button
 
+answer = msgBoxPy.integerbox(title='Your Age?', prompt='Enter your age: ') # Displays Integer Input
+if answer == 'cancel': # Cancel button was selected
+    msgBoxPy.errorbox(title='Error', message='Cancelled!')
+else: # Integer was input and returned
+    msgBoxPy.infobox(title='Your Age?', message='Your age is: ' + str(answer))
+
 answer = msgBoxPy.retrycancelbox(title='Title', message='Empty') # Displays Retry/Cancel box
 if not answer: # Answer was False (Cancel button was selected)
     msgBoxPy.warningbox('Retry?', 'You have cancelled the retry!')
