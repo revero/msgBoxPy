@@ -46,7 +46,8 @@ if not answer: # Answer was False (Cancel button was selected)
 else: # Answer was True (Retry was selected)
     retryAgain()
     
-myDirectory = msgBoxPy.selectdirectorybox(initialdir='/etc', mustexist=True) # Displays Select Directory dialog
+# Displays Select Directory dialog starting at the initial directory "/etc"
+myDirectory = msgBoxPy.selectdirectorybox(initialdir='/etc', mustexist=True)
 if not myDirectory: # Cancel button was selected
     msgBoxPy.errorbox(title='Error', message='Cancelled!')
 else: # Directory was selected and is returned 
