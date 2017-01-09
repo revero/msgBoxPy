@@ -64,7 +64,7 @@ else: # Directory was selected and is returned
     msgBoxPy.infobox(title='Your Directory', message=myDirectory)
 ```
 
-Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required or optional parameters:
+Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required or optional arguments:
 ```python
 from tkinter import Tk
 import tkinter.messagebox as box
