@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/lotspaih/dicePy8k/master/LICENSE) [![Language](https://img.shields.io/badge/language-python-blue.svg)](https://www.python.org/) 
+
 # msgBoxPy
 Simple Cross-platform Python Message and Dialog Boxes Using the Tkinter Standard Library
 
