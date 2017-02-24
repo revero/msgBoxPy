@@ -1,6 +1,4 @@
-#! python3
-#! /usr/bin/python3
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 
 # Copyright (c) 2016 Mark Lotspaih
 # MIT License - https://opensource.org/licenses/MIT
