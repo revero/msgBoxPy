@@ -4,7 +4,7 @@
 Simple Cross-platform Python Message, Dialog, and Input Boxes Using the Tkinter Standard Library
 
 ## Purpose and Background
-I just needed a simple, small, and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Python scripts. Sure there are many great third party modules I could use that are much more sophisticated, but I prefer to stay as close to the standard Python library as possible and only needed some simple GUI options. That's why I pieced together msgBoxPy's examples to use [Tkinter](https://wiki.python.org/moin/TkInter), included in the standard Python library, to show cross-platform message, input, and dialog boxes.
+I just needed a simple, small, and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Python scripts. Sure there are many great third party modules I could use that are much more sophisticated, but I prefer to stay as close to the standard Python library as possible and only needed some basic GUI options. That's why I pieced together msgBoxPy's examples to use [Tkinter](https://wiki.python.org/moin/TkInter), included in the standard Python library, to show cross-platform message, input, and dialog boxes.
 
 **The message boxes available are:**
 * Information
