@@ -95,4 +95,4 @@ print(response) # Shows a 'yes' or 'no' response
 * Clean up script (*make it more "[Pythonic](http://docs.python-guide.org/en/latest/writing/style/)"*)
 
 ## License
-MIT License for msgBoxPy
+[MIT License](https://opensource.org/licenses/MIT) for msgBoxPy
