@@ -1,7 +1,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)](https://raw.githubusercontent.com/lotspaih/dicePy8k/master/LICENSE) [![Language](https://img.shields.io/badge/language-python-blue.svg)](https://www.python.org/) 
 
 # msgBoxPy
-Simple Cross-platform Python Message and Dialog Boxes Using the Tkinter Standard Library
+Simple Cross-platform Python Message, Dialog, and Input Boxes Using the Tkinter Standard Library
 
 ## Purpose and Background
 I just needed a simple, small, and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Python scripts. Sure there are many great third party modules I could use that are much more sophisticated, but I prefer to stay as close to the standard Python library as possible and only needed some basic GUI options. That's why I pieced together msgBoxPy's examples to use [Tkinter](https://wiki.python.org/moin/TkInter), included in the standard Python library, to show cross-platform message, input, and dialog boxes.
@@ -17,6 +17,7 @@ I just needed a simple, small, and easy way to display information, warnings, ge
 **The input boxes available are:**
 * String Input Box (returns the string if entered, otherwise returns 'empty' or 'cancel')
 * Integer Input Box (returns a validated integer, otherwise returns 'cancel')
+* Listbox Input (returns the selection from a given list, otherwise returns 'None')
 
 **The dialog boxes available are:**
 * Select Filename (returns full path to file selected)
@@ -26,7 +27,7 @@ I just needed a simple, small, and easy way to display information, warnings, ge
 ![alt text](https://github.com/lotspaih/msgBoxPy/blob/master/ex_msgBoxPyU.png "Example Image")
 
 ## Requirements
-* [ ] Python 3.4 or higher (*with Tkinter in Standard Library*)
+* [ ] Python 3.5 or higher (*with Tkinter in Standard Library*)
 
 Tested with Windows 7 SP1 x64, Ubuntu 16.04 x64, and OSX 10.11.6
 
@@ -64,6 +65,15 @@ if not myDirectory: # Cancel button was selected
     msgBoxPy.errorbox(title='Error', message='Cancelled!')
 else: # Directory was selected and is returned 
     msgBoxPy.infobox(title='Your Directory', message=myDirectory)
+    
+# Displays a Listbox with the arguments passed and returns the selected argument
+answer = msgBoxPy.listbox('Mother', 'Father', 'Brother', 'Sister')
+if not answer: # Nothing was selected or window was closed
+    msgBoxPy.errorbox(title='Listbox', message='You did not make a selection!')
+elif answer == 'Mother':
+    msgBoxPy.infobox(title='Listbox', message='Hi, Mom!')
+else:
+    msgBoxPy.infobox(title='Listbox', message='Hi, family member!')
 ```
 
 Copy and paste the examples from within the msgBoxPy.py file directly into your script and call the function passing the required or optional arguments:
@@ -83,7 +93,6 @@ print(response) # Shows a 'yes' or 'no' response
 
 ## TODO
 * Clean up script (*make it more "[Pythonic](http://docs.python-guide.org/en/latest/writing/style/)"*)
-* Add multiple selection type boxes??? (e.g. lists, checkboxes, radio buttons)
 
 ## License
-MIT License for msgBoxPy
+[MIT License](https://opensource.org/licenses/MIT) for msgBoxPy
