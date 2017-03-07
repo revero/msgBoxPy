@@ -27,7 +27,7 @@ I just needed a simple, small, and easy way to display information, warnings, ge
 ![alt text](https://github.com/lotspaih/msgBoxPy/blob/master/ex_msgBoxPyU.png "Example Image")
 
 ## Requirements
-* [ ] Python 3.4 or higher (*with Tkinter in Standard Library*)
+* [ ] Python 3.5 or higher (*with Tkinter in Standard Library*)
 
 Tested with Windows 7 SP1 x64, Ubuntu 16.04 x64, and OSX 10.11.6
 
