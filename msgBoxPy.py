@@ -8,10 +8,13 @@
 # USAGE: "import msgBoxPy" or copy the examples (including imports) below.
 # VERSION: 03/07/2017
 
-from tkinter import Tk, Frame, Listbox, Button
-import tkinter.messagebox as box
+from tkinter import Tk
+from tkinter import Frame
+from tkinter import Listbox
+from tkinter import Button
 from tkinter import filedialog
 from tkinter import simpledialog
+import tkinter.messagebox as box
 
 
 def infobox(title='Title', message='Empty'):
