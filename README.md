@@ -34,8 +34,10 @@ Tested with Windows 7 SP1 x64, Ubuntu 16.04 x64, and OSX 10.11.6
 ## Installation
 No install required. Just copy the msgBoxPy.py file to the same directory as your Python script and import it, or copy and paste the examples from within the msgBoxPy.py file directly into your own script and modify as needed.
 
+Downloading msgBoxPy.py using [cURL](https://curl.haxx.se/):
+
 ```
-wget --no-check-certificates https://raw.githubusercontent.com/lotspaih/msgBoxPy/master/msgBoxPy.py
+curl -o msgBoxPy.py https://raw.githubusercontent.com/lotspaih/msgBoxPy/master/msgBoxPy.py
 ```
 
 ## Example Use
