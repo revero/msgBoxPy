@@ -3,8 +3,9 @@
 # Copyright (c) 2016 Mark Lotspaih
 # MIT License - https://opensource.org/licenses/MIT
 
-# msgBoxPy - Quick import or reference for making simple GUI messages, input,
-#    and dialog boxes.
+'''msgBoxPy - Quick import or reference for making simple GUI messages, input,
+and dialog boxes in Python.
+'''
 # USAGE: "import msgBoxPy" or copy the examples (including imports) below.
 # VERSION: 03/07/2017
 
